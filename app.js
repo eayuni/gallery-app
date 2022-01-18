@@ -5,6 +5,11 @@ const express = require('express');
 // Initialize express
 const app = express();
 
+// route for the index page
+app.get('/', (req, res)=>{
+    res.send('<h1> Welcome to my app</h1>')
+ });
+
 // Define the port number
 const PORT = 5000;
 
